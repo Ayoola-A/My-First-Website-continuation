@@ -1,0 +1,135 @@
+body {
+    background-color: #fff0f5;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    background: #d36b8a;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff0f5;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    color: #333333;
+    background: #fff0f5;
+    order: -1;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    flex: 1 1 250px;
+    padding: 20px;
+    border: 1px solid #d36b8a;
+    border-radius: 20px;
+    background: white;
+}
+
+@media (min-width: 640px) {
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        gap: 30px;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #e75480;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #e75480;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe4ec;
+}
+/* CONTACT FORM */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+ }
+ textarea {
+    min-height: 120px;
+ } 
